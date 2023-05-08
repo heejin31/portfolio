@@ -1,0 +1,415 @@
+/* Google Web Font : Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+/* Defalt CSS */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  font-size: 15px;
+  margin: 0;
+  height: 100vh;
+  background-color: #fff;
+}
+/* Entire Layout */
+.cd-section {
+  height: 100vh;
+}
+.cd-section > div {
+  height: 100%;
+  position: relative;
+}
+.content {
+  background-color: #ddd;
+  position: absolute;
+  width:calc(100% - 40px);
+  height: calc(100% - 80px);
+  left: 20px;
+  bottom: 20px;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.gnb-inner {
+  width:calc(100% - 40px);
+  margin: auto;
+  height: 60px;
+  line-height: 60px;
+}
+.logo {
+  float: left;  
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+.logo img {
+  width: 100%;
+}
+.gnb {
+  float: right;
+}
+.menu {
+  display: none;
+}
+.menu a {}
+.slogan {
+  font-size: 18px;
+  font-style: italic;
+}
+.trigger {
+  display: none;
+}
+/*#######################   Common ##########################*/
+hr.bar {
+  width: 50px;
+  height: 4px;
+  border: none;
+  background-color: crimson;
+  margin: 30px auto;
+}
+
+/*#######################   Home  ###########################*/
+.homeInner {
+  background-color: #fff;
+  height: 100%;
+
+}
+
+.opacityPlay {
+  height: 100%;
+  width: 100%;  
+}
+
+.homeHeading {
+  position: absolute;
+  top: 50%;
+  left: 600px;
+  transform: translateY(-50%);
+}
+.homeHeading span {
+  display: block;
+  font-size: 80px;
+  color: #fff;
+  font-weight: 500;
+  width: 0;
+  overflow: hidden;
+  animation: show-text 0.8s ease-in-out 1s both;
+  white-space: nowrap;
+}
+.homeHeading span:nth-child(1) {
+  animation-delay: 1s;
+}
+.homeHeading span:nth-child(2) {
+  animation-delay: 1.4s;
+}
+.homeHeading span:nth-child(3) {
+  animation-delay: 1.8s;
+}
+@keyframes show-text {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+/*#######################   About  ##########################*/
+.aboutInner {
+  background: #bbb url(images/line-drawing.png) no-repeat right bottom;
+  height: 100%;
+}
+.aboutItems {
+  width: 60%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 100px;
+}
+.item {
+  overflow: hidden;margin-bottom: 30PX;
+}
+.item:hover img {
+  filter: invert(0);
+
+}
+.item:hover h3 {
+  color: #000;
+  letter-spacing: 1px;
+  
+}
+.item img {
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+  filter: invert(100%);
+  transition: 0.5s;
+}
+.item span {}
+.item h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  transition: 0.5s;
+  letter-spacing: -1px;
+}
+.item p {
+  overflow: hidden;
+  font-size: 18px;
+}
+
+/*#######################  Skill  ##########################*/
+.skillInner {
+  background: #1d1b24;
+  height: 100%;
+}
+.skillFeature {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.skillFeature > div {
+  height: 300px;
+  color: #bbb;
+}
+.skillInfo {}
+
+.skillInfo > div {
+  float: left;
+}
+.skillHeading {
+  width: 70%;
+  padding-right: 50px;
+}
+.skillHeading h2, .skillList h2 {
+  color: #fff;
+  margin: 0;
+}
+.skillHeading p {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.skillHeading hr.bar {
+  display: inline-block;
+}
+.skillPhoto {
+  width: 30%;
+}
+.skillPhoto img {
+  height: 250px;
+}
+
+.skillList {}
+
+.skillList hr.bar {
+  display: inline-block;
+}
+.listSlider {
+  
+}
+.listSlider div {
+  position: relative;
+}
+.listSlider div img {
+  width: 130px;
+  height: 130px;
+  /* transform: translateX(75%); */
+}
+.listSlider div span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 85%;
+  left: 26%;
+  transform: translate( -50%, -50% );
+}
+
+/* slick custom */
+.slick-track {
+  height: 180px !important;
+}
+.listSlider .slick-arrow {
+  display: none !important;
+}
+.listSlider .slick-dots li button:before {
+  color: #fff;
+  font-size: 40px;
+}
+.listSlider .slick-dots li {
+  margin-right: 0;
+}
+
+/*#######################  Portfolio  ##########################*/
+.portfolioInner {
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ddd;
+
+}
+.tabs {
+  height: 100%;
+  width: 500%;
+  transition: 0.5s;
+
+}
+.tab {
+  height: 100%;
+  float: left;
+  width:20%;
+}
+.tab > div {
+  height: 100%;
+  float: left;
+}
+.portfolioInfo {
+  width: 25%;
+}
+.portfolioPhoto {
+  width: 75%;
+  overflow: hidden;
+}
+.portfolioPhoto img {
+  width: 33.33333% !important;
+  height: 475%;  
+  /* object-fit: cover; */
+}
+input[name=tabmenu] {
+  display: none;
+}
+.btn {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 25%;
+  text-align: center;
+}
+.btn label {
+  cursor: pointer;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 8px;
+  position: relative;
+}
+.btn label:before {
+  content: "";
+  display: inline-block;
+  border: 1px solid transparent;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  transition: 0.3s;
+}
+.btn label:hover:before {
+  border: 1px solid #aaa;
+}
+
+input[id=tab1]:checked ~ .btn label[for=tab1]:before,
+input[id=tab2]:checked ~ .btn label[for=tab2]:before,
+input[id=tab3]:checked ~ .btn label[for=tab3]:before,
+input[id=tab4]:checked ~ .btn label[for=tab4]:before,
+input[id=tab5]:checked ~ .btn label[for=tab5]:before {
+  border: 1px solid #aaa;
+}
+
+input[id=tab1]:checked ~ .tabs {
+  margin-left: 0;
+}
+input[id=tab2]:checked ~ .tabs {
+  margin-left: -100%;
+}
+input[id=tab3]:checked ~  .tabs {
+  margin-left: -200%;
+}
+input[id=tab4]:checked ~  .tabs {
+  margin-left: -300%;
+}
+input[id=tab5]:checked ~  .tabs {
+  margin-left: -400%;
+}
+/* Portfolio Info */
+.portfolioInfo {
+  padding: 50px;
+  position: relative;
+}
+.portfolioInfo h3 {
+  font-size: 25px;
+  position: relative;
+}
+.portfolioInfo ul {
+  line-height: 2em;
+  font-size: 20px;
+  margin: 50px 0;
+}
+.portfolioInfo ul li:before {
+  content:"\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+}
+
+.view {
+  background-color: #3f3f3f;
+  color: #fff;
+  text-transform: uppercase;
+  width: 150px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.view:hover {
+  background-color: #000;
+}
+
+.view .fa {
+  transition: 0.5s;  
+}
+
+.view:hover .fa {
+  margin-left: 20px;
+}
+
+.portfolioInfo:before {
+  content: attr(data-text);
+  font-size: 130px;
+  color: #eee;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  
+}
